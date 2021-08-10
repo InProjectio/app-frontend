@@ -1,0 +1,90 @@
+.spaceNameWrapper {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  padding: 0 20px;
+  position: relative;
+  .contextWrapper {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    z-index: 99;
+  }
+  .add {
+    display: none;
+  }
+  .context {
+    margin-right: 9px;
+    display: none;
+  }
+  .numberProjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(120, 121, 241, 0.4);
+  }
+  &:hover {
+    background: rgba(159, 162, 180, 0.08);
+    .context, .add {
+      display: block;
+    }
+    .contextIcon {
+      width: 12px;
+    }
+    .plusIcon {
+      width: 10px;
+    }
+    .numberProjects {
+      display: none;
+    }
+  }
+  .type {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(150, 216, 43, 0.66);
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  .nameWrapper {
+    flex: 1
+  }
+  .spaceName {
+    font-size: 14px;
+    color: #A4A6B3;
+    margin-bottom: 0;
+  }
+}
+
+.active {
+  background: rgba(159, 162, 180, 0.08);
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #DDE2FF;
+    left: 0;
+    top: 0
+  }
+}
+
+.collapse {
+  .spaceNameWrapper {
+    padding-left: 12px;
+  }
+}

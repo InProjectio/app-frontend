@@ -1,0 +1,72 @@
+.container {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
+  overflow: hidden;
+  width: 304px;
+  z-index: 70;
+  -webkit-transform: translateZ(0);
+  padding: 0 12px 12px 12px;
+  position: relative;
+  .btnClose {
+    padding: 5px 12px 10px 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    .closeIcon {
+      width: 20px;
+      opacity: 0.8;
+    }
+    &:hover {
+      .closeIcon {
+        opacity: 1;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    align-items: flex-start;
+    margin: 8px 0;
+    .avatar {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .content {
+      flex: 1;
+      .fullName {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #172b4d;
+        padding-right: 40px;
+        margin-bottom: 0;
+      }
+      .username {
+        color: #5e6c84;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .btnRemove {
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    padding: 6px 12px;
+    position: relative;
+    margin: 0 -12px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #172b4d;
+    &:hover {
+      background-color: rgba(9,30,66,.04);
+    }
+  }
+
+}

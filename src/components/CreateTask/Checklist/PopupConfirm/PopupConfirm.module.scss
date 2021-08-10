@@ -1,0 +1,43 @@
+.container {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
+  overflow: hidden;
+  width: 304px;
+  z-index: 70;
+  -webkit-transform: translateZ(0);
+  .content {
+    padding: 0 12px 12px 12px;
+  }
+  
+  .message {
+    color: #172b4d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .btn {
+    background-color: #b04632;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    padding: 0 24px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    width: 100%;
+    &:hover {
+      background-color: #933b27;;
+      box-shadow: none;
+      border: none;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex: 1;
+  .row {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
+  .active {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      background: #39B5EB;
+      border-radius: 7px;
+      height: 7px;
+      width: 100%;
+      left: 0;
+      bottom: -14px;
+    }
+    .text {
+      color: #000000;
+    }
+  }
+  .spaceIcon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A781E7;
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .spaceName {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 0;
+  }
+  .iconWrapper {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddddd;
+    border-radius: 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    .fileIcon {
+      width: 18px;
+    }
+    .circle {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+  .icon {
+    width: 22px;
+    margin-right: 10px;
+  }
+  .text {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.36);
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,98 @@
+.container {
+  .title {
+    color: #5e6c84;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 20px;
+    margin: 0 8px 4px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .members {
+    position: relative;
+    .viewMember {
+      position: absolute;
+      top: 36px
+    }
+  }
+  .member {
+    background-color: #dfe1e6;
+    border-radius: 25em;
+    color: #172b4d;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 32px;
+    margin: 0 4px 4px 0;
+    overflow: visible;
+    position: relative;
+    width: 32px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 0;
+    .avatar {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &:hover {
+      background-color: #c1c7d0;
+      .avatar {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .btnWrapper {
+    position: relative;
+  }
+
+  .btnAddMember {
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px 4px 0;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(9,30,66,.08);
+      box-shadow: none;
+      border: none;
+    }
+    .plusIcon {
+      width: 12px;
+    }
+
+    
+  }
+
+  .selectMembers {
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    left: 0;
+  }
+}

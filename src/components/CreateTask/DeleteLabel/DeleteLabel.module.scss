@@ -1,0 +1,33 @@
+.container {
+  padding: 0 12px 12px 12px;
+  .message {
+    color: #172b4d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .btnDelete {
+    background-color: #b04632;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    padding: 0 24px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    width: 100%;
+    &:hover {
+      background-color: #933b27;;
+      box-shadow: none;
+      border: none;
+      color: #fff;
+    }
+  }
+}

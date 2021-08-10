@@ -1,0 +1,58 @@
+.container {
+  height: 40px;
+  position: relative;
+  margin-bottom: 8px;
+  text-align: center;
+  .title {
+    box-sizing: border-box;
+    color: #5e6c84;
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(9,30,66,.13);
+    margin: 0 12px;
+    overflow: hidden;
+    padding: 0 32px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .btnClose {
+    padding: 0 12px 0 8px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    .closeIcon {
+      opacity: 0.8;
+      width: 20px;
+    }
+    &:hover {
+      .closeIcon {
+        opacity: 1;
+      }
+    }
+  }
+
+  .btnBack {
+    padding: 0 8px 0 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    .backIcon {
+      opacity: 0.8;
+      width: 20px;
+    }
+    &:hover {
+      .backIcon {
+        opacity: 1;
+      }
+    }
+  }
+}

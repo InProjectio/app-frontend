@@ -1,0 +1,50 @@
+.container {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .content {
+    padding-top: 57px;
+  }
+  .menusMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transform: translateY(-1000px);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .show {
+    transform: translateY(0);
+  }
+  @media (max-width: 1024px) {
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+    }
+    .content {
+      padding-top: 56px;
+    }
+  }
+  @media (max-width: 767px) {
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9998;
+    }
+    .content {
+      padding-top: 56px;
+    }
+  }
+}

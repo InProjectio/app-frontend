@@ -1,0 +1,182 @@
+.container {
+  padding: 40px 35px 0 35px;
+  
+  .errorMessage {
+    font-size: 12px;
+    line-height: 1.67;
+    margin-top: 10px;
+    display: block;
+    color: #ff6565;
+  }
+  .title {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+  .label {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    margin: 4px 0 12px
+  }
+
+  .rowBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .inputField {
+      width: 250px;
+    }
+  }
+
+  .btnAddMember {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f6ad8;
+    border-radius: 50%;
+    margin: 4px 0 12px 8px;
+    .plusIcon {
+      width: 16px;
+    }
+    &:hover {
+      background-color: #4f6ad8;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .addMemberWrapper {
+    margin: 20px 0;
+    display: flex;
+    .plusIcon {
+      width: 16px;
+      margin-right: 6px;
+    }
+  }
+
+  th {
+    font-size: 12px;
+    color: #666666;
+    text-transform: uppercase;
+  }
+
+  td {
+    font-size: 13px;
+    color: #333333;
+    vertical-align: middle;
+  }
+
+  .statusWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .roleWrapper {
+    position: relative;
+    .loader {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-10px);
+      right: -10px;
+    }
+  }
+
+  .resend {
+    font-size: 13px;
+    color: #008aff !important;
+    text-decoration: underline !important;
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .loader {
+      position: absolute;
+      right: -30px;
+    }
+  }
+  .sended {
+    font-size: 13px;
+    color: #999999;
+    margin-left: 6px;
+  }
+
+  .check {
+    width: 16px;
+    margin: 2px;
+  }
+  .checked {
+    width: 20px;
+    margin: 0px;
+  }
+
+  .methods {
+    overflow: hidden;
+  }
+
+  .method {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    display: block;
+    white-space: nowrap;
+    &:last-child {
+      border-bottom: 0;
+    }
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+
+  tr {
+    cursor: pointer;
+    .btnRemove {
+      visibility: hidden;
+      .trashIcon {
+        width: 16px;
+      }
+    }
+    &:hover {
+      .btnRemove {
+        visibility: visible;;
+      }
+    }
+  }
+
+  .stt {
+    padding: 10px 10px 10px 0;
+    width: 30px;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 500;
+  }
+  .removeCol {
+    width: 30px;
+  }
+
+  .col {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0;
+  }
+}

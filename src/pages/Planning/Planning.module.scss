@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 120px;
+  width: 100%;
+  .content {
+    width: 400px;
+    .title {
+      font-weight: bold;
+      font-size: 51px;
+      line-height: 60px;
+      color: #000000;
+      margin-bottom: 22px;
+    }
+    .description {
+      font-size: 18px;
+      color: #A5A5A5;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .enterEmailWrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .divider {
+        width: 4px;
+        height: 40px;
+        background: #C6457B;
+        border-radius: 4px;
+        margin-right: 12px;
+      }
+      .mailIcon {
+        width: 27px;
+      }
+      .input {
+        padding-left: 30px;
+        padding-right: 20px;
+        border: 0;
+        height: 40px;
+        outline: 0;
+      }
+    }
+    .row {
+      display: flex;
+      align-items: center;
+    }
+    .getStarted {
+      height: 30px;
+      font-weight: bold;
+      font-size: 17px;
+      color: #ffffff;
+      background-color: #7463FC;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+    }
+    .note {
+      font-size: 15px;
+      font-weight: bold;
+      color: #9B9A9A;
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+    .review {
+      width: 300px;
+      margin-top: 88px;
+    }
+  }
+  .banner {
+    flex: 1;
+    .planingBanner {
+      max-width: 100%;
+    }
+  }
+}

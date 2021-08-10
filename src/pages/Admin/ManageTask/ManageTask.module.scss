@@ -1,0 +1,37 @@
+.container {
+  margin: -20px;
+  position: relative;
+  overflow: hidden;
+  .background {
+    background-image: url("https://numeralpaint.com/wp-content/uploads/2020/08/japan-autumn-season-paint-by-number.jpg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+}
+
+.content {
+  padding: 60px 20px 16px 20px;
+  background-color: #f8f8f8;
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - 80px);
+}
+
+.filter {
+  position: fixed;
+  top: 64px;
+  z-index: 99;
+  width: calc(100% - 281px);
+  right: 0;
+}
+
+.filterLarge {
+  width: calc(100% - 53px);
+}

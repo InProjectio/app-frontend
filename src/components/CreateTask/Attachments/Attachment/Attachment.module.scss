@@ -1,0 +1,68 @@
+.item {
+  display: flex;
+  margin-bottom: 8px;
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+  }
+  .content {
+    flex: 1;
+    padding-top: 6px;
+  }
+  .linkName {
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 20px;
+    color: #172b4d;
+    margin-bottom: 0;
+  }
+  .description {
+    color: #5e6c84;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .btn {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.btnView {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #5e6c84;
+  display: block;
+  margin: 8px 0;
+  padding: 6px 12px;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.08);
+    box-shadow: none;
+    border: none;
+    color: #172b4d;
+  }
+}
+
+.deleteWrapper, .editWrapper {
+  position: relative;
+  display: inline-block;
+  .popup {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 99;
+  }
+}

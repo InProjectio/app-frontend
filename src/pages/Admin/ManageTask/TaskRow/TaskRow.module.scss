@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  .assigneeButton {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    border-style: dashed;
+    .addUserIcon {
+      width: 12px;
+      opacity: 0.4;
+    }
+  }
+  .btnAddDueDate {
+    opacity: 0.4;
+    .calendarCheck {
+      width: 16px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .taskNameWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    .status {
+      position: relative;
+      margin: 0 11px;
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      transition: .1s;
+      cursor: pointer;
+    }
+    .taskName {
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 13.5px;
+      line-height: 1.5;
+      margin-right: 2px;
+      border-radius: 4px;
+      color: #333333;
+    }
+  }
+
+  .assignee {
+    width: 100px;
+    text-align: center;
+    position: relative;
+    .members {
+      position: relative;
+      height: 26px;
+      margin-left: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      .avatar {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .dueDate {
+    width: 100px;
+    text-align: center;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 4000;
+    position: relative;
+  }
+
+  .budget {
+    width: 100px;
+    text-align: center;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 4000;
+    position: relative;
+  }
+
+  .spend {
+    width: 100px;
+    text-align: center;
+    color: #343434;
+    font-size: 12px;
+    font-weight: 4000;
+    position: relative;
+  }
+
+  .loading {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.relative {
+  position: relative;
+  
+  .popup {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 99;
+  }
+}

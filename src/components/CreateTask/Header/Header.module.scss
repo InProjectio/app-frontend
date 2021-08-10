@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 20px;
+  .inputWrapper {
+    cursor: pointer;
+    position: relative;
+    margin: 0 8px;
+    .inlist {
+      padding: 0 10px;
+      font-size: 14px;
+      color: #333333;
+      transition: background .2s cubic-bezier(.785,.135,.15,.86) 0s;
+      display: flex;
+      min-width: 190px;
+      height: 36px;
+      border-radius: 18px;
+      margin: 0;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid #e4e4e4;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+    }
+  }
+  .error {
+    .inlist {
+      border: 1px solid #ff6565
+    }
+  }
+  .cardIcon {
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 2px;
+  }
+  .content {
+    flex: 1;
+    .input {
+      margin-bottom: 4px;
+      outline: none;
+      border: none;
+      background-color: #fafbfc;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      border-radius: 3px;
+      display: block;
+      transition-property: background-color,border-color,box-shadow;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+      width: 100%;
+      background: transparent;
+      border-radius: 3px;
+      box-shadow: none;
+      font-size: 20px;
+      font-weight: 600;
+      height: 32px;
+      line-height: 24px;
+      margin: -4px -8px 4px -8px;
+      min-height: 24px;
+      padding: 4px 8px;
+      resize: none;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      &:focus {
+        background-color: #fff;
+        box-shadow: inset 0 0 0 2px #0079bf;
+      }
+    }
+    .errorInput {
+      box-shadow: inset 0 0 0 2px #ff6565;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      margin-top: 6px;
+    }
+    .text {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #5e6c84;
+      display: flex;
+      align-items: center;
+    }
+    .decorator {
+      text-decoration: underline;
+      margin-left: 4px;
+      margin-right: 12px;
+    }
+    .viewIcon {
+      width: 16px;
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: 80px;
+  border: 2px dashed #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333333;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  .loading {
+    width: 70px;
+  }
+  .text {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    margin-left: 10px;
+  }
+}

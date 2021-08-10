@@ -1,0 +1,134 @@
+.container {
+  margin-top: 20px;
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .descriptionIcon {
+    width: 22px;
+    
+  }
+  .title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #172b4d;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 16px;
+    margin-right: 8px;
+    padding: 10px 0;
+  }
+  .btnEdit {
+    color: #172b4d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    height: 32px;;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 12px;
+    text-decoration: none;
+    background-color: rgba(9,30,66,.04);
+    box-shadow: none;
+    border: none;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    &:hover {
+      background-color: rgba(9,30,66,.08);
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  .inputWrapper {
+    padding-left: 44px;
+    padding-right: 20px;
+  }
+
+  
+
+  .input {
+    margin-bottom: 4px;
+    outline: none;
+    border: none;
+    background-color: #fafbfc;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    display: block;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    width: 100%;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: -4px -8px;
+    padding: 6px 10px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    color: #172b4d;
+    resize: none;
+    &:focus {
+      background-color: #fff !important;
+      box-shadow: inset 0 0 0 2px #0079bf;
+    }
+  }
+
+  .inputEmpty {
+    background-color: rgba(9,30,66,.04);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding-left: 34px;
+  }
+
+  .btnSave {
+    background-color: #0079bf;
+      box-shadow: none;
+      border: none;
+      color: #fff;
+      padding: 0 12px;
+      height: 32px;
+      font-size: 14px;
+      font-weight: 400;
+      transition-property: background-color,border-color,box-shadow;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      &:hover {
+        background-color: #026aa7;
+        box-shadow: none;
+        border: none;
+        color: #fff;
+      }
+  }
+
+  .btnClose {
+    margin-left: 8px;
+    .closeIcon {
+      width: 24px;
+      opacity: 0.8;
+    }
+    &:hover {
+      .closeIcon {
+        opacity: 1;
+      }
+    }
+  }
+}

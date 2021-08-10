@@ -1,0 +1,74 @@
+.container {
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  .title {
+    color: #292d34;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .calendarStyle {
+    height: calc(100vh - 230px);
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .today {
+      user-select: none;
+      font-size: 13px;
+      color: #333;
+      font-weight: 400;
+      transition: all .2s cubic-bezier(.785,.135,.15,.86) 0s;
+      height: 24px;
+      padding: 0 6px;
+      margin-right: 4px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+    .arrowIcon {
+      width: 20px;
+    }
+    .back {
+      width: 24px;
+      height: 24px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #f2f2f2;
+      }
+      .arrowIcon {
+        transform: rotate(180deg);
+      }
+    }
+    .next {
+      width: 24px;
+      height: 24px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+    .date {
+      margin-bottom: 0;
+      transition: all .2s cubic-bezier(.785,.135,.15,.86) 0s;
+      cursor: pointer;
+      color: #343434;
+      &:hover {
+        color: #7b68ee;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  height: 100%;
+  .row {
+    display: flex;
+    align-items: center;
+    .diaryIcon {
+      width: 22px;
+      margin-right: 16px;
+    }
+    .title {
+      font-size: 16px;
+      line-height: 20px;
+      color: #172b4d;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-left: 16px;
+      margin-right: 8px;
+      padding: 10px 0;
+    }
+  }
+
+  
+
+  .activities {
+    // height: calc(100vh - 130px);
+    // overflow-y: auto;
+    padding-right: 20px;
+    padding-bottom: 60px;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 24px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    .avatar {
+      width: 32px;
+      margin-right: 8px;
+      border-radius: 50%;
+    }
+    .inputWrapper {
+      flex: 1
+    }
+  }
+}

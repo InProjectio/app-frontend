@@ -1,0 +1,116 @@
+.inputWrapper {
+  position: relative;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px -1px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30,66, 0.08);
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 85ms ease;
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    display: block;
+    line-height: 20px;
+    transition-property: background-color,border-color,box-shadow;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+    font-size: 14px;
+    font-weight: 400;
+    color: #172b4d;
+    resize: none;
+    background-color: #f4f4f4;
+    &:focus {
+      border: 0;
+      box-shadow: none;
+      outline: 0;
+      background-color: #ffffff;
+    }
+  }
+  .actions {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    .btnSave {
+      background-color: rgba(9,30,66,.04);
+      box-shadow: none;
+      border: none;
+      color: #a5adba;
+      cursor: not-allowed;
+      box-shadow: none;
+      border: none;
+      padding: 0 12px;
+      height: 32px;
+      font-size: 14px;
+      font-weight: 400;
+      transition-property: background-color,border-color,box-shadow;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+    }
+
+    .btnClose {
+      margin-left: 8px;
+      .closeIcon {
+        width: 20px;
+        opacity: 0.8;
+      }
+      &:hover {
+        .closeIcon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .btnActive {
+      background-color: #0079bf;
+      color: #ffffff;
+      cursor: pointer;
+      &:hover {
+        background-color: #026aa7;
+      }
+    }
+
+    .btn {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 4px;
+      border-radius: 3px;
+      transition-property: background-color,border-color,box-shadow;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+      &:hover {
+        background-color: rgba(9,30,66,.08);
+      }
+      .attachmentIcon {
+        width: 14px;
+      }
+      .faceIcon {
+        width: 14px;
+      }
+    }
+  }
+  .actionsFocus {
+    display: flex;
+  }
+}
+
+.error {
+  box-shadow: 0 1px 2px -1px rgba(207, 30, 30, 0.25), 0 0 0 1px rgba(207, 30,30, 0.08);
+  border: 1px solid rgb(207, 30, 30);
+}

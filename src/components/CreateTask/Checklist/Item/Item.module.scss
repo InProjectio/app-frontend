@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 3px;
+  transform-origin: left bottom;
+  transition-property: transform, opacity, height, padding, margin;
+  transition-duration: 0.14s;
+  transition-timing-function: ease-in;
+  padding: 6px 12px;
+  margin: 0 -12px;
+  .checkWrapper {
+    width: 22px;
+    margin-right: 16px;
+    .icon {
+      width: 16px;
+    }
+    .iconSelected {
+      width: 20px;
+    }
+  }
+  .content {
+    flex: 1
+  }
+  .row {
+    display: flex;
+    align-items: flex-start;
+    .text {
+      color: #172b4d;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      margin-bottom: 0;
+      flex: 1;
+    }
+    .textDone {
+      text-decoration: line-through;
+      color: #5e6c84;
+    }
+    .actions {
+      align-items: center;
+      display: flex;
+      
+      .btnSmall {
+        visibility: hidden;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        margin-right: 4px;
+        &:hover {
+          background-color: rgba(9,30,66,.08);
+        }
+        .addUser {
+          width: 12px;
+        }
+        .clock {
+          width: 12px;
+        }
+        .trash {
+          width: 12px;
+        }
+      }
+      .show {
+        visibility: visible;
+        white-space: nowrap;
+        width: auto;
+        padding: 0 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(9,30,66,.08);
+        span {
+          font-size: 13px;
+          color: #333333;
+          line-height: 1;
+        }
+        img {
+          margin-right: 6px;
+        }
+      }
+      .noBackground {
+        background-color: transparent !important;
+      }
+      .members {
+        position: relative;
+        height: 24px;
+        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .avatar {
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+        }
+      }
+      .btnDelete {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.04);
+    .row {
+      .actions {
+        .btnSmall {
+          visibility: visible;
+        }
+        
+      }
+    }
+  }
+}
