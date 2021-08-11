@@ -7,7 +7,6 @@ import {
 import InputField from 'components/InputField'
 import classes from './SettupPassword.module.scss'
 import Button from 'components/Button'
-import lockIcon from 'images/padlock.svg'
 import { convertSearchParamsToObject } from 'utils/utils'
 import * as Api from 'api/api'
 import history from 'utils/history'
@@ -75,16 +74,16 @@ const SettupPassword = ({ handleSubmit, location }) => {
         component={InputField}
         label={messages.password}
         type='password'
-        icon={lockIcon}
         placeholder={messages.passwordPlaceholder}
+        h50={true}
       />
 
       <Field name='confirmPassword'
         component={InputField}
         label={messages.confirmPassword}
         type='password'
-        icon={lockIcon}
         placeholder={messages.confirmPasswordPlaceholder}
+        h50={true}
       />
 
       <Button className={classes.btnChangePassword}
